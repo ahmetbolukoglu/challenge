@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Ahmet BÖLÜKOĞLU">
+    <meta name="generator" content="Form Design v1.0">
+    <title>Ahmet BÖLÜKOĞLU · Form Design</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <!-- Favicons -->
+    <meta name="theme-color" content="#563d7c">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/form.css" />
+
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+<body class="text-center">
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+            <div class="inner">
+                <h3 class="masthead-brand">Form Design</h3>
+                <nav class="nav nav-masthead justify-content-center">
+                    <a class="nav-link active" href="#">Ana Sayfa</a>
+                    <a class="nav-link" href="#">Hakkımızda</a>
+                    <a class="nav-link" href="#">İletişim</a>
+                </nav>
+            </div>
+        </header>
+
+        <main role="main" class="inner cover">
+            <div class="form-row">
+                <div class="col-md-6" style="padding: 200px 0px;">
+                    <h1 class="cover-heading">Tasarım bir sanattır.</h1>
+                    <p class="lead">
+                        Hepimiz biliyoruz ki arada bir fark var fakat bizim sektörümüzün dışındaki insanlar
+                        bunu kolayca göremeyebilir. Örneğin; aileniz, profesyonel bir tasarımcı olmanıza karşın, sizin
+                        için sanatçı diyebilir.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-box-size">
+                        <form class="register-form">
+                            <div class="form-box col-md-12">
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-6">
+                                        <label for="txtFirstName">Adı</label>
+                                        <input type="text" class="form-control" id="txtFirstName" value=""
+                                            placeholder="Adı" required />
+                                        <div class="invalid-feedback">
+                                            Lütfen Adı alanını doldurun.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-6">
+                                        <label for="txtSurname">Soyadı</label>
+                                        <input type="text" class="form-control" id="txtSurname" value=""
+                                            placeholder="Soyadı" required />
+                                        <div class="invalid-feedback">
+                                            Lütfen Soyadı alanını doldurun.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-12">
+                                        <label for="txtUsername">Kullanıcı Adı</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                                            </div>
+                                            <input type="text" class="form-control" id="txtUsername"
+                                                placeholder="Kullanıcı Adı" aria-describedby="inputGroupPrepend3"
+                                                required />
+                                            <div class="invalid-feedback">
+                                                Lütfen Kullanıcı Adı alanını doldurun.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-12">
+                                        <label for="txtPassword">Şifre</label>
+                                        <input type="password" class="form-control" id="txtPassword" value=""
+                                            placeholder="Şifre" required />
+                                        <div class="invalid-feedback">
+                                            Lütfen Şifre alanını doldurun.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-6">
+                                        <label for="txtCountry">Ülke</label>
+                                        <input type="text" class="form-control" id="txtCountry" placeholder="Ülke"
+                                            required />
+                                        <div class="invalid-feedback">
+                                            Lütfen Ülke alanını doldurun.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-6">
+                                        <label for="txtCity">Şehir</label>
+                                        <input type="text" class="form-control" id="txtCity" placeholder="Şehir"
+                                            required />
+                                        <div class="invalid-feedback">
+                                            Lütfen Şehir alanını doldurun.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="chkTerms"
+                                            required />
+                                        <label class="form-check-label" for="chkTerms">
+                                            Şartları ve koşulları kabul edin
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            Lütfen okuduktan sonra şartları ve koşulları kabul edin.
+                                        </div>
+                                    </div>
+                                </div>
+                                <button id="btnRegister" class="btn btn-primary" type="submit"
+                                    data-success="Hesabınız oluşturuldu."
+                                    data-error="Lütfen bilgileri eksiksiz giriniz."
+                                    style="width: 100%;">Kaydol</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="mastfoot mt-auto">
+            <div class="inner">
+                <p>Powered by <span style="color: #fff;">Ahmet BÖLÜKOĞLU</span>.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

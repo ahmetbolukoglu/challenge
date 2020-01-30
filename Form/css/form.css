@@ -1,0 +1,157 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.field {
+  position: relative;
+}
+.field i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: none;
+}
+form {
+  width: 500px;
+  margin: 0 auto;
+}
+input,
+button,
+textarea {
+  position: relative;
+  -webkit-apprearance: none;
+  -moz-apprearance: none;
+  apprearance: none;
+  margin: 0;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  /* width: 100%; */
+  border: 1px solid #c7c7c7;
+  background-color: #fafafa;
+  -webkit-transition: background-color 0.3s, border-color 0.4s;
+  -moz-transition: background-color 0.3s, border-color 0.4s;
+  -o-transition: background-color 0.3s, border-color 0.4s;
+  transition: background-color 0.3s, border-color 0.4s;
+}
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+input:focus,
+textarea:focus,
+input:hover,
+textarea:hover {
+  outline: none;
+  border-color: #777;
+}
+button {
+  display: block;
+  border: none;
+  background-color: #666;
+  color: #fff;
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  padding: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #555;
+}
+button:before,
+button:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  line-height: 50px;
+  cursor: default;
+}
+
+/* --------------------------------------------------- */
+/*	Rolling button style compliments of CodDrops.com
+/* --------------------------------------------------- */
+button:after {
+  top: -100%;
+  content: attr(data-success);
+  background: #7aca7c;
+  color: #358337;
+  -webkit-transform-origin: 0% 100%;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform-origin: 0% 100%;
+  -moz-transform: rotateX(90deg);
+  -ms-transform-origin: 0% 100%;
+  -ms-transform: rotateX(90deg);
+  transform-origin: 0% 100%;
+  transform: rotateX(90deg);
+}
+button:before {
+  top: 100%;
+  background: #e96a6a;
+  color: #a33a3a;
+  content: attr(data-error);
+  -webkit-transform-origin: 0% 0%;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform-origin: 0% 0%;
+  -moz-transform: rotateX(-90deg);
+  -ms-transform-origin: 0% 0%;
+  -ms-transform: rotateX(-90deg);
+  transform-origin: 0% 0%;
+  transform: rotateX(-90deg);
+}
+
+button.submit-success {
+  background: #aaa;
+  -webkit-transform-origin: 50% 100%;
+  -webkit-transform: rotateX(-90deg) translateY(100%);
+  -moz-transform-origin: 50% 100%;
+  -moz-transform: rotateX(-90deg) translateY(100%);
+  -ms-transform-origin: 50% 100%;
+  -ms-transform: rotateX(-90deg) translateY(100%);
+  transform-origin: 50% 100%;
+  transform: rotateX(-90deg) translateY(100%);
+}
+
+button.submit-error {
+  background: #aaa;
+  -webkit-transform-origin: 50% 0%;
+  -webkit-transform: rotateX(90deg) translateY(-100%);
+  -moz-transform-origin: 50% 0%;
+  -moz-transform: rotateX(90deg) translateY(-100%);
+  -ms-transform-origin: 50% 0%;
+  -ms-transform: rotateX(90deg) translateY(-100%);
+  transform-origin: 50% 0%;
+  transform: rotateX(90deg) translateY(-100%);
+}
+
+/* --------------------------------------------------- */
+/*	Validation Styles
+/* --------------------------------------------------- */
+.success {
+  background-color: #eafff8;
+}
+.success + i {
+  color: #1c9d39;
+  display: block;
+}
+.error + i {
+  color: #b82020;
+  display: block;
+}
+.error {
+  background-color: #fff1ff;
+}
